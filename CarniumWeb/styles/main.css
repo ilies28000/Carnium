@@ -361,15 +361,29 @@ a{
 
 footer{
   width : 100%;
-  margin: 0 auto; 
   background-color: #E6E7EA;
+  position: relative;
 }
 
 .PageDown{
   display: flex; 
   justify-content: space-around;
   flex-wrap: nowrap;
+  width : 960px;
+  margin: 0 auto;
+  height: 500px;
 }
+
+.info{
+  margin-top: -13px;
+}
+
+.info p:first-of-type{
+  font-size: 30px;
+  margin-bottom:10px;
+}
+
+
 
 .LinkPage ul{
   list-style: none;
@@ -383,7 +397,29 @@ li{
 }
 
 
+
 .SocialNetwork img {
   width : 30px;
   height: 30px;
+  padding : 5px;
+}
+
+.lineV{
+  margin-top: 20px;
+  height:150px;
+  color: black;
+  border-right: solid;
+  border-right-width: 1px;
+}
+
+.lineH{
+  position: absolute;
+  width: 100%;
+  height:1px;
+  border-top: solid;
+  border-top-color:  black;
+  border-top-width: 1px;
+  border-bottom: solid; 
+  border-bottom-color: black;
+  margin-top: 320px;
 }
