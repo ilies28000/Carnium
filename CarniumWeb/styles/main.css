@@ -351,3 +351,26 @@ i{
   bottom: 0;
   font-size: 3em;
 }
+
+footer{
+  width : 100%;
+  margin: 0 auto; 
+  background-color: #E6E7EA;
+}
+
+.PageDown{
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.LinkPage ul{
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
+
+li{
+  margin: 5%;
+}
