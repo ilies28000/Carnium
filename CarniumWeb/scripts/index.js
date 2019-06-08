@@ -61,12 +61,12 @@
 
 class Carousel{
     /**
-     * @param {HTMLElement} element 
-     * @param {Object} options 
+     * @param {HTMLElement} element
+     * @param {Object} options
      * @param {Object} options.slidesToScroll nombre element a faire defiler
      * @param {Object} options.slidesVisible nombre element visible dans une slide
      */
- 
+
     constructor( element, options = {}){
         this.element = element
         this.options = Object.assign({} ,{
@@ -89,8 +89,8 @@ class Carousel{
     }
 
     /**
-     * 
-     * @param {string} className 
+     *
+     * @param {string} className
      * @returns HTMLElement
      */
 
