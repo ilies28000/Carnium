@@ -352,6 +352,13 @@ i{
   font-size: 3em;
 }
 
+/* footer */
+
+a{
+  text-decoration: none;
+}
+
+
 footer{
   width : 100%;
   margin: 0 auto; 
@@ -373,4 +380,10 @@ footer{
 
 li{
   margin: 5%;
+}
+
+
+.SocialNetwork img {
+  width : 30px;
+  height: 30px;
 }
