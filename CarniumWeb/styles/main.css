@@ -270,6 +270,75 @@ body{
   transition:color 0.4s ease 0s;
 }
 
+/* BackGround1 */
+
+.background{
+  width: 1440px;
+  height: 900px;
+  background: url("../images/image3.jpeg"); 
+  background-size: 1440px 900px;
+  background-attachment: fixed;
+  position: relative;
+}
+.concept{
+  position: absolute;
+  top : 0;
+  right : 0;
+  margin: 0 auto; 
+  width: 1440px;
+  height: 200px;
+  background-color: #FFF;
+}
+
+.livraison{
+  position: absolute;
+  top : 200px;
+  right : 0;
+  margin: 0 auto; 
+  width: 1440px;
+  height: 400px;
+  background-color: #FFF;
+}
+
+/* BackGround2 */
+
+.background2{
+  width: 1440px;
+  height: 900px;
+  background: url("../images/image2.jpeg"); 
+  background-size: 1440px 900px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.Histoire{
+  position: absolute;
+  top : 0;
+  right : 0;
+  margin: 0 auto; 
+  width: 1440px;
+  height: 200px;
+  background-color: #FFF;
+  
+}
+.Team{
+  position: absolute;
+  top : 200px;
+  right : 0;
+  margin: 0 auto; 
+  width: 1440px;
+  height: 400px;
+  background-color: #FFF;
+}
+.Partenaires{
+  position: absolute;
+  top : 200px;
+  right : 0;
+  margin: 0 auto; 
+  width: 1440px;
+  height: 400px;
+  background-color: #FFF;
+} 
 /* footer */
 
 a{
