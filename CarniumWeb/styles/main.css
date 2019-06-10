@@ -31,7 +31,7 @@ body{
     animation-fill-mode: forwards;
   }
 
-  .container{
+  .containerHeader{
     display: flex;
     justify-content: space-between;
     width: 850px;
@@ -131,7 +131,9 @@ body{
   font-family: FontAwesome;
 }
 */
-
+.container{
+  position: relative;
+}
 .item{
   margin: 0px auto;
   width:100%;
@@ -206,7 +208,67 @@ body{
 }
 .carousel__next--hidden{
   opacity: 0;
-} */
+}
+
+
+/* reservation */
+
+.containerResevation{
+  position: absolute;
+  margin: 0 auto;
+  top: 10%;
+  right: 42%;
+  width: auto;
+}
+.containerResevation img{
+  display: flex;
+  margin: 5px auto;
+  width: 20%;
+  height: 20%;
+}
+.containerResevation h3, .containerResevation h4{
+  margin: 5px auto;
+  text-align: center;
+  font-size: 2.4em;
+  color: #c21626;
+}
+.containerResevation h4{
+  font-size: 2em;
+
+}
+.containerResevation a {
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  left: 15%;
+  padding: 5px;
+  background-color: transparent;
+  border: solid rgba(193, 22, 38, 1) 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s, transform 0.3s ease 0s ;
+}
+.containerResevation a:hover{
+  background-color:rgba(193, 22, 38, 1);
+  border-color: #1e1e1b;
+  transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s, transform 0.3s ease 0s ;
+  transform: scale(1.2)
+}
+
+.containerResevation a span{
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  line-height: 40px;
+  font-size: 1.6em;
+  transition:color 0.3s ease 0s;
+}
+
+.containerResevation a:hover span{
+  color:#1e1e1b;
+  transition:color 0.4s ease 0s;
+}
 
 /* footer */
 
