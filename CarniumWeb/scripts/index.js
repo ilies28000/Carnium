@@ -86,14 +86,14 @@ class Carousel{
      */
     
     setStyle (){
-        console.log("style")
+        // console.log("style")
         let ratio = this.items.length / this.slidesVisible
         this.container.style.width = (ratio * 100)+ "%"
         this.items.forEach(item => item.style.width= ((100 / this.slidesVisible )/ ratio) + "%")
     }
 
     createNavigation(){
-        console.log("navi")
+        // console.log("navi")
         let nextButton = this.createDivWithClass('carousel__next')
         let prevButton = this.createDivWithClass('carousel__prev')
         this.root.appendChild(nextButton)
@@ -124,12 +124,12 @@ class Carousel{
     next(){
         this.gotoItem(this.currentSlide + this.slidesToScroll)
         this.options.click = true
-        console.log( this.options.click)
+        // console.log( this.options.click)
     }
     prev(){
         this.gotoItem(this.currentSlide - this.slidesToScroll)
         this.options.click = true
-        console.log( this.options.click)
+        // console.log( this.options.click)
     }
     /**
      * deplace le slider vers l'element ciblé
@@ -144,14 +144,14 @@ class Carousel{
             if (this.options.loop){
                 index = this.items.length - this.slidesVisible
             }else{
-                console.log('return')
+                // console.log('return')
                 return
             }
         } else if (index >= this.items.length || (this.items[this.currentSlide + this.slidesVisible] === undefined && index > this.currentSlide)) {
             if (this.options.loop){
                 index = 0
             }else{
-                console.log('return2')
+                // console.log('return2')
                 return
             }
         }
@@ -199,17 +199,17 @@ class Carousel{
         }
     }
     playSlide(){
-        console.log('1',this.options.click)
+        // console.log('1',this.options.click)
         let action
         if(this.options.click === false){
         action = setInterval(() => {
             if(this.options.click === false){
-            console.log('2',this.options.click)
+            // console.log('2',this.options.click)
             // console.log(this.currentSlide + this.slidesToScroll)
             this.gotoItem(this.currentSlide + this.slidesToScroll)
         }
         if (this.options.click === true ){
-            console.log('3',this.options.click)
+            // console.log('3',this.options.click)
             this.options.click = false
         }
         }, 6000)
