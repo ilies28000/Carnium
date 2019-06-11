@@ -1,14 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     margin:0 auto;
     /* width: 100vmax; */
-    width: 100%;
-    /* max-width: 1440px; */
+    max-width: 1440px;
+    /* width: 100%; */
     padding:0;
     font-family: "MONTSERRAT", "Arial", sans-serif;
     font-size: 14px;
     min-height : 100%;
     overflow-x: hidden;
-    background-color: red;
   } 
 
   /*
@@ -22,12 +26,15 @@ body{
 
   nav{
     display: flex;
-    width: 100%;
     justify-content: center;
-    background-color: #1e1e1b;
-    position: relative;
+    width: 100%;
     height : 60px;
+    background-color: #1e1e1b;
+    position: fixed;
+    z-index: 100;
+    transition: opacity 0.4s ease;
   }
+
  .imageLogoCarnium{
     display: flex;
     flex-flow: wrap;
@@ -35,7 +42,7 @@ body{
   }
  .imageLogoCarnium img{
     cursor: pointer;
-    width : 100%;
+    width : 80%;
     height: 80%;
     animation: moveimg2 1s;
     animation-fill-mode: forwards;
@@ -318,21 +325,34 @@ body{
   height: 600px;
   background-color: #FFF;
 }
-.concept{
+#menu{
   display: flex;
   flex-wrap: wrap;
 }
+.h2NotreConcept{
+display: flex;
+justify-content: center;
+margin: 20PX auto;
+font-size: 2.6em;
+width: 100%;
+}
 .concept_container1{
   margin: 0 auto;
-  width: 33.33%
+  width: 33.33%;
+  position: relative;
+  height: 500px;
 }
 .concept_container2{
   margin: 0 auto;
-  width: 33.33%
+  width: 33.33%;
+  position: relative;
+  height: 500px;
 }
 .concept_container3{
   margin: 0 auto;
-  width: 33.33%
+  width: 33.33%;
+  position: relative;
+  height: 500px;
 }
 .concept_container1 img, .concept_container2 img, 
 .concept_container3 img{
@@ -358,21 +378,26 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 15px auto;
   font-size: 1.2em;
   line-height: 1.2em;
   text-align: justify;
 }
 
-.imge_prix1, .imge_prix2, .imge_prix3{
-  display: flex;
-  margin: 10px auto;
-  /* margin-left: 90px; */
-  width: 30%;
+.prix_menu1, .prix_menu2, .prix_menu3{
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 38%; 
+  width: 90px;
+  height: 90px;
+  border: 6px solid rgb(0, 0, 0);
+  border-radius: 50%;
 }
-.imge_prix1{
+.prix_menu1 p, .prix_menu2 p, .prix_menu3 p{
+  text-align: center;
+  font-size: 1.9em;
+}
 
-}
 /* .concept{
   position: absolute;
   top : 0;
@@ -412,7 +437,7 @@ body{
   background-color: #FFF;
 } 
 
-.Histoire{
+#notreHistoire{
   display: flex;
   flex-wrap: wrap;
 }
@@ -462,7 +487,7 @@ hr{
   text-align: justify;
 }
 
-.Partenaires{
+#NosPartenaires{
   display: flex;
   flex-wrap: wrap;
 }

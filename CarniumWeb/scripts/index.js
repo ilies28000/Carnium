@@ -255,3 +255,20 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 })
+
+
+// scrolll
+
+function Scroll(){
+let yPos = window.pageYOffset
+let nav = document.querySelector('nav')
+
+  if (yPos > 30){
+    nav.style.opacity="0.5"
+  }
+  else{
+    nav.style.opacity="1"
+  }
+
+}
+window.addEventListener("scroll",Scroll);
