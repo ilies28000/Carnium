@@ -19,10 +19,10 @@ body{
     HEADER
   */
   
-  /* header{
+  header{
     display: flex;
     justify-content: center
-  }  */
+  } 
 
   nav{
     display: flex;
@@ -36,16 +36,17 @@ body{
   }
 
  .imageLogoCarnium{
-    display: flex;
-    flex-flow: wrap;
+    width: 180px;
     margin: 10px 0px;
   }
- .imageLogoCarnium img{
+   .imageLogoCarnium a {
+    width : 100%;
+    height: 100%;
+  } 
+ .imageLogoCarnium a img{
     cursor: pointer;
     width : 80%;
     height: 80%;
-    animation: moveimg2 1s;
-    animation-fill-mode: forwards;
   }
 
   .containerHeader{
@@ -71,63 +72,40 @@ body{
   }
 
   .imageLogoFacebook{
+    width: 20px;
+    margin: 0 15px;
     display: flex;
-    margin: 20px -40px 10px 60px ;
   }
-  .imageLogoFacebook img{
-    width: 70%;
-    height: 70%;
+  .imageLogoFacebook a img{
+    width: 100%;
+    height: 100%;
+    transition: visibility 1s ease, background-image 1s ease;
   }
   .imageLogoInstagram{
+    width: 20px;
+    margin: 0 15px;
     display: flex;
-    margin: 20px 30px 10px -60px ;
   }
-  .imageLogoInstagram img{
-    width: 70%;
-    height: 70%;
+ .imageLogoInstagram a img{
+    width: 100%;
+    height: 100%;
+    transition: visibility 1s ease, background-image 1s ease;
   } 
 
-  .imageLogoCarnium img:hover{
-    animation: moveimg 1s;
-    animation-fill-mode: forwards;
+  /* .imageLogoFacebook a:hover img{
+    visibility: hidden;
+    transition: visibility 1s ease, background-image 1s ease;
   }
-  @keyframes moveimg {
-    0%{
-        transform: translateX(0px);
-        }
-      10%{
-        transform: translateX(10px);
-      }
-      20%{
-        transform: translateX(0px);
-      }
-      30%{
-        transform: translateX(10px);
-      }
-      40%{
-        transform: translateX(0px);
-      }
-      50%{
-        transform: translateX(10px);
-      }
-      60%{
-        transform: translateX(0px);
-      }
-      70%{
-        transform: translateX(10px);
-      }
-      80%{
-        transform: translateX(0px);
-      }
-      90%{
-        transform: translateX(10px);
-      }
-      100%{
-        transform: translateX(0px);
-      }
-    
-    }
-    
+  .imageLogoFacebook a img:hover{
+    background-image: url("../images/SVG/facebookRouge.svg");
+    background-size: 60px;
+    transition: visibility 1s ease, background-image 1s ease;
+  } */
+  /* .imageLogoInstagram a img:hover{
+    background-image: url("../images/SVG/instagramRouge.svg");
+    transition: color 2s ease;
+  } */
+
 
 /* Slider */
 
@@ -255,8 +233,8 @@ body{
 .containerResevation{
   position: absolute;
   margin: 0 auto;
-  top: 10%;
-  right: 42%;
+  top: 30%;
+  right: 41%;
   /* width: auto; */
 }
 .containerResevation img{
@@ -433,7 +411,7 @@ width: 100%;
 .container_second{
   margin: 0 auto; 
   width: 100%;
-  height: 1200px;
+  height: auto;
   background-color: #FFF;
 } 
 
@@ -753,3 +731,13 @@ button:hover{
 }
 
 /*FIN PAGE CONTACT*/
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+}
