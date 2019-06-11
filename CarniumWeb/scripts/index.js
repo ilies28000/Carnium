@@ -246,8 +246,6 @@ get slidesVisible(){
 
 }
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     new Carousel(document.querySelector('#carousel1'), {
