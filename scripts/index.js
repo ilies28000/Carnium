@@ -272,3 +272,25 @@ let nav = document.querySelector('nav')
 
 }
 window.addEventListener("scroll",Scroll);
+
+
+// burger !
+
+// const burger = document.querySelector('.burger');
+
+// burger.addEventListener('click', () => {
+//   burger.classList.toggle('cross');
+//   document.querySelector('menu').classList.toggle('open');
+// });
+
+let menuMobile = document.querySelector('.containerHeader')
+let buttonHamburger = document.querySelector('.burger')
+
+buttonHamburger.addEventListener('click',function(){
+    if (menuMobile.classList.contains("containerHeader_visible")) {
+      menuMobile.classList.remove("containerHeader_visible")
+    } else {
+      menuMobile.classList.add("containerHeader_visible")
+    }
+  
+  })

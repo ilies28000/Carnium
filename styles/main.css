@@ -36,7 +36,7 @@ body{
   }
 
  .imageLogoCarnium{
-    width: 180px;
+    width: 130px;
     margin: 10px 0px;
   }
    .imageLogoCarnium a {
@@ -70,7 +70,10 @@ body{
     color: #c21626;
     transition: color 0.4s ease;
   }
-
+  .reseauxSoci{
+    display: flex;
+    margin-left: 20px;
+  }
   .imageLogoFacebook{
     width: 20px;
     margin: 0 15px;
@@ -233,7 +236,7 @@ body{
 .containerResevation{
   position: absolute;
   margin: 0 auto;
-  top: 30%;
+  top: 33.33%;
   right: 41%;
   /* width: auto; */
 }
@@ -273,6 +276,10 @@ body{
   transform: scale(1.2)
 }
 
+.containerResevation:hover img ~ .containerResevation a:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
 .containerResevation a span{
   display: flex;
   justify-content: center;
@@ -732,12 +739,163 @@ button:hover{
 
 /*FIN PAGE CONTACT*/
 
+/* burger */
 
+.burger, .burger span{
+  display: none
+}
 
 /* RESPONSIVE */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+} */
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .imageLogoCarnium {
+    width: 33.3%;
+    margin: 5px 10px;
+  }
+  .imageLogoCarnium a img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .reseauxSoci {
+    display: none;
+    /* justify-content: center;
+    width: 33.33%; */
+}
+
+/* .containerHeader{
+  display: none;
+
+} */
+.containerHeader{
+  position: fixed;
+  top: 100%;
+  left: 0px;
+  width:100%;
+  height:100%;
+  background-color:  #1e1e1b;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-out 0.6s;
+  justify-content: center;
 
 }
-@media screen and (min-width: 300px) and (max-width: 768px) {
+
+.containerHeader_visible{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  background-color:  #1e1e1b;
+  display: flex;
+  opacity: 0.8;
+  flex-direction: column;
+  z-index: 10;
+}
+
+/* .containerHeader_visible{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  background-color:  #1e1e1b;
+  opacity: 0.8;
+  z-index: 10;
+
+} */
+/* .containerHeader_visible li{
+  line-height: 1.4em;
+  padding: 15px;
+  width: 100%;
+  background-color: #1e1e1b;
+} */
+/* .containerHeader_visible li a{
+  animation: transHeight 1s forwards;
+}
+@keyframes transHeight {
+  from{
+    height: 0;
+  }
+  to{
+    height: 100%;
+  }
+} */
+
+  /* .imageLogoFacebook{
+    width: 20px;
+  }
+  .imageLogoInstagram{
+    width: 20px;
+    margin: 0 10px;
+  } */
+  .burger {
+    display: block;
+    padding-top: 10px;
+    margin: 0 10px;
+    width: 33.33%;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding-bottom: 0;
+  }
+  .burger span {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 50px;
+    height: 10px;
+    background-color: #c21626;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transform: none;
+    top: 0;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  .burger.cross {
+    padding-bottom: 15px;
+  }
+  .burger.cross span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 15px;
+  }
+  .burger.cross span:nth-of-type(2) {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .burger.cross span:nth-of-type(3) {
+    transform: rotate(-45deg);
+  }
+  /* #menu {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    padding-right: 20px;
+  }
+  #menu.open {
+    transform: translateX(0);
+  }
+  #menu .burger {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  } */
+  
 }
