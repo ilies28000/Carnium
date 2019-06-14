@@ -241,9 +241,9 @@ body{
 
 .containerResevation{
   position: absolute;
-  margin: 0 auto;
-  top: 25%;
-  width: 100%;
+  margin: 0 5%;
+  top: 27%;
+  width: 90%;
 }
 .containerResevation img{
   display: flex;
@@ -803,7 +803,7 @@ button:hover{
 
 /* @media  screen and  (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { */
 
-@media  screen and (orientation : portrait) and (min-width: 168px) and (max-width: 1024px) {
+@media  screen and (min-width: 168px) and (max-width: 1024px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -971,7 +971,11 @@ button:hover{
 .carousel__next--hidden{
   opacity: 0;
 }
-
+.containerResevation{
+  position: absolute;
+  margin: 0 10%;
+  width: 80%;
+}
 
 }
 
