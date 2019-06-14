@@ -38,7 +38,7 @@
 
       // a parametrer
       $email = 'iliesbenosman@gmail.com';//email d'envoi
-      $password = 'Isco2200';// mdp
+      $password = '';// mdp
       $smtp = 'smtp.gmail.com';//serveur d'envoi
       $to_email = 'iliesbenosman@gmail.com';//adresse email à qui envoyer le mail.
 

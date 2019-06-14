@@ -283,19 +283,6 @@ burger.addEventListener('click', () => {
   document.querySelector('#containerMobil').classList.toggle('open');
 });
 
-// let menuMobile = document.querySelector('.containerHeader')
-// let buttonHamburger = document.querySelector('.burger')
-
-// buttonHamburger.addEventListener('click',function(){
-//     if (menuMobile.classList.contains("containerHeader_visible")) {
-//       menuMobile.classList.remove("containerHeader_visible")
-//       console.log("az")
-//     } else {
-//         console.log("da")
-//           menuMobile.classList.add("containerHeader_visible")
-//     }
-  
-//   })
 
   // survol //
 
