@@ -12,10 +12,12 @@ body{
     /* width: 100vmax; */
     width: 100%;
     padding:0;
-     font-family: "Rosarina", "Arial", sans-serif; 
-    font-size: 14px;
+    font-family: "Rosarina", "Arial", sans-serif; 
+    font-size: 100%;
     min-height : 100%;
     overflow-x: hidden;
+    color: #FFF;
+    background-color: #000
   } 
 
   /*
@@ -66,7 +68,7 @@ body{
   .menuItem a{
     transition: color 0.4s ease;
     color: white;
-    font-size: 20px;
+    font-size: 1.26vw;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -79,7 +81,7 @@ body{
     margin-left: 20px;
   }
   .imageLogoFacebook{
-    width: 20px;
+    width: 25px;
     margin: 0 15px;
     display: flex;
   }
@@ -89,7 +91,7 @@ body{
     transition: visibility 1s ease, background-image 1s ease;
   }
   .imageLogoInstagram{
-    width: 20px;
+    width: 25px;
     margin: 0 15px;
     display: flex;
   }
@@ -240,34 +242,32 @@ body{
 .containerResevation{
   position: absolute;
   margin: 0 auto;
-  top: 30%;
-  right: 480px;
-  left: 480px;
-  width: 200px;
+  top: 25%;
+  width: 100%;
 }
 .containerResevation img{
   display: flex;
   margin: 5px auto;
-  width: 50%;
-  height: 50%;
+  width: 8%;
+  height: 8%;
 }
 .containerResevation h3, .containerResevation h4{
   margin: 10px auto;
   text-align: center;
-  font-size: 2.4em;
+  font-size: 2.4vw;
   color: #c21626;
 }
 .containerResevation h4{
-  font-size: 2em;
+  font-size: 2vw;
 
 }
 .containerResevation a {
   position: absolute;
-  width: 180px;
+  width: 10%;
   height: 40px;
-  left: 0;
+  left: 45%;
   padding: 5px;
-  background-color: transparent;
+  background-color: rgb(255, 92, 92);
   border: solid rgba(193, 22, 38, 1) 2px;
   border-radius: 30px;
   cursor: pointer;
@@ -289,8 +289,8 @@ body{
   display: flex;
   justify-content: center;
   color: #FFF;
-  line-height: 40px;
-  font-size: 1.6em;
+  line-height: 45px;
+  font-size: 1.6vw;
   transition:color 0.3s ease 0s;
 }
 
@@ -364,7 +364,7 @@ body{
   margin: 0 auto; 
   width: 100%;
   height: 600px;
-  background-color: #FFF;
+  background-color: #000;
 }
 #menu{
   display: flex;
@@ -374,7 +374,7 @@ body{
 display: flex;
 justify-content: center;
 margin: 20PX auto;
-font-size: 2.6em;
+font-size: 2.6vw;
 width: 100%;
 }
 .concept_container1{
@@ -409,9 +409,9 @@ width: 100%;
   display: flex;
   justify-content: center;
   margin: 15px auto;
-  font-size: 2em;
+  font-size: 2vw;
   width: 100%;
-  line-height: 1.2em;
+  line-height: 1.2vw;
 }
 
 .concept_container1 p, .concept_container2 p, 
@@ -419,8 +419,8 @@ width: 100%;
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
   text-align: justify;
 }
 
@@ -431,12 +431,12 @@ width: 100%;
   right: 38%; 
   width: 90px;
   height: 90px;
-  border: 6px solid rgb(0, 0, 0);
+  border: 6px solid #FFF;
   border-radius: 50%;
 }
 .prix_menu1 p, .prix_menu2 p, .prix_menu3 p{
   text-align: center;
-  font-size: 1.9em;
+  font-size: 1.9vw;
 }
 
 /* .concept{
@@ -465,7 +465,7 @@ width: 100%;
   margin: 0 auto;
   width: 100%;
   height: 1400px;
-  background: url("../images/image2.jpeg"); 
+  background: url("../images/image7.jpg"); 
   background-size: 1440px 900px;
   background-attachment: fixed;
   position: relative;
@@ -475,7 +475,7 @@ width: 100%;
   margin: 0 auto; 
   width: 100%;
   height: auto;
-  background-color: #FFF;
+  background-color: #000;
 } 
 
 #notreHistoire{
@@ -487,14 +487,14 @@ width: 100%;
   display: flex;
   justify-content: center;
   margin: 20PX auto;
-  font-size: 2.6em;
+  font-size: 2.6vw;
   width: 100%;
 }
 hr{
   margin: 20px auto;
   width: 30%;
   height: 0px;
-  border: black 2px solid;
+  border: rgba(193, 22, 38, 1) 2px solid;
 }
 .pageLeftHistoire{
   width: 50%;
@@ -511,8 +511,8 @@ hr{
 .pageLeftHistoire p {
   margin: 0 auto;
   width: 50%;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
   padding: 15px 0;
 }
 
@@ -522,8 +522,8 @@ hr{
 
 .pageRightHistoire p {
   margin: 0 auto;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
   padding: 15px 0;
   text-align: justify;
 }
@@ -537,7 +537,7 @@ hr{
   display: flex;
   justify-content: center;
   margin: 20PX auto;
-  font-size: 2.6em;
+  font-size: 2.6vw;
   width: 100%;
 }
 
@@ -556,14 +556,14 @@ hr{
 
 .partenaires_column h4{
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.6vw;
 }
 
 .partenaires_column p{
   margin: 0 auto;
   text-align: center;
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-size: 1.2vw;
+  line-height: 1.4vw;
   width: 50%;
 }
 /* 
@@ -586,7 +586,7 @@ a{
 
 footer{
   width : 100%;
-  background-color: #E6E7EA;
+  background-color: rgb(96, 97, 97);
   position: relative;
 }
 
@@ -795,6 +795,7 @@ button:hover{
 
 /*FIN PAGE CONTACT*/
 
+
 /* burger */
 
 .burger, .burger span{
@@ -803,11 +804,9 @@ button:hover{
 
 /* RESPONSIVE */
 
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media  screen and  (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { */
 
-} */
-
-@media screen and (min-width: 300px) and (max-width: 768px) {
+@media  screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -823,23 +822,17 @@ button:hover{
 
   .reseauxSoci {
     display: none;
-    /* justify-content: center;
-    width: 33.33%; */
+    justify-content: center;
+    width: 33.33%;
 }
-
-/* .containerHeader{
-  display: none;
-
-} */
 .containerHeader{
-  position: fixed;
   top: 100%;
   left: 0px;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 550%;
   background-color:  #1e1e1b;
   margin: 0px;
-  padding: 0px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   transition: all ease-out 0.6s;
@@ -847,61 +840,11 @@ button:hover{
 
 }
 
-.containerHeader_visible{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width:100%;
-  height:100%;
-  background-color:  #1e1e1b;
-  display: flex;
-  opacity: 0.8;
-  flex-direction: column;
-  z-index: 10;
-}
-
-/* .containerHeader_visible{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 60px;
-  left: 0px;
-  width: 100%;
-  background-color:  #1e1e1b;
-  opacity: 0.8;
-  z-index: 10;
-
-} */
-/* .containerHeader_visible li{
-  line-height: 1.4em;
-  padding: 15px;
-  width: 100%;
-  background-color: #1e1e1b;
-} */
-/* .containerHeader_visible li a{
-  animation: transHeight 1s forwards;
-}
-@keyframes transHeight {
-  from{
-    height: 0;
-  }
-  to{
-    height: 100%;
-  }
-} */
-
-  /* .imageLogoFacebook{
-    width: 20px;
-  }
-  .imageLogoInstagram{
-    width: 20px;
-    margin: 0 10px;
-  } */
   .burger {
     display: block;
-    padding-top: 10px;
+    padding-top: 20px;
     margin: 0 10px;
-    width: 33.33%;
+    width: 25%;
     cursor: pointer;
     transition: all 0.5s;
     padding-bottom: 0;
@@ -939,19 +882,59 @@ button:hover{
   .burger.cross span:nth-of-type(3) {
     transform: rotate(-45deg);
   }
-  /* #menu {
+   #containerMobil {
     position: absolute;
     transform: translateX(-100%);
     transition: all 0.5s;
     padding-right: 20px;
   }
-  #menu.open {
+  #containerMobil.open {
     transform: translateX(0);
   }
-  #menu .burger {
+  #containerMobil .burger {
     position: absolute;
     left: 100%;
-    top: 0;
-  } */
+    top: 80px;
+  }
+
   
+   .menuItem a{
+    transition: color 0.4s ease;
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+  }
+  .menuItem a:hover{
+    transition: color 0.4s ease;
+    color: #c21626;
+    font-size: 2vw;
+    text-decoration: none;
+  }
 }
+
+/* 
+
+@media screen and (min-width:768px) and (max-width:1024px)
+{
+  .container{
+    width: 768px;
+  }
+}
+
+@media screen and (min-width:540px) and (max-width:768px)
+{
+  .container{
+    width: 540px;
+  }
+}
+
+@media screen and (max-width:540px)
+{
+  .container{
+    width: 100%;
+  }
+
+  div[class^="block1"]{
+    width:calc(100% - 20px);
+  }
+} */

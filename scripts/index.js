@@ -276,35 +276,35 @@ window.addEventListener("scroll",Scroll);
 
 // burger !
 
-// const burger = document.querySelector('.burger');
+const burger = document.querySelector('.burger');
 
-// burger.addEventListener('click', () => {
-//   burger.classList.toggle('cross');
-//   document.querySelector('menu').classList.toggle('open');
-// });
+burger.addEventListener('click', () => {
+  burger.classList.toggle('cross');
+  document.querySelector('#containerMobil').classList.toggle('open');
+});
 
-let menuMobile = document.querySelector('.containerHeader')
-let buttonHamburger = document.querySelector('.burger')
+// let menuMobile = document.querySelector('.containerHeader')
+// let buttonHamburger = document.querySelector('.burger')
 
-buttonHamburger.addEventListener('click',function(){
-    if (menuMobile.classList.contains("containerHeader_visible")) {
-      menuMobile.classList.remove("containerHeader_visible")
-    } else {
-      menuMobile.classList.add("containerHeader_visible")
-    }
+// buttonHamburger.addEventListener('click',function(){
+//     if (menuMobile.classList.contains("containerHeader_visible")) {
+//       menuMobile.classList.remove("containerHeader_visible")
+//       console.log("az")
+//     } else {
+//         console.log("da")
+//           menuMobile.classList.add("containerHeader_visible")
+//     }
   
-  })
+//   })
 
   // survol //
 
   let commandeButton = document.querySelector('#commandeLink')
   let carniumCLogo = document.querySelector('.containerResevation img')
-
   commandeButton.addEventListener(
         'mouseover',
         function () {
             carniumCLogo.classList.add('carniumC')
-            console.log('fa1')
         }
     )
  commandeButton.addEventListener(
