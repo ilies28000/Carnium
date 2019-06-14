@@ -2,14 +2,17 @@ html{
     scroll-behavior: smooth;
 }
 
+@font-face {
+	font-family: "Rosarina";
+	src: url('../font/rosarina.ttf');
+}
 
 body{
     margin:0 auto;
     /* width: 100vmax; */
-    max-width: 1920px;
-    /* width: 100%; */
+    width: 100%;
     padding:0;
-    font-family: "MONTSERRAT", "Arial", sans-serif;
+     font-family: "Rosarina", "Arial", sans-serif; 
     font-size: 14px;
     min-height : 100%;
     overflow-x: hidden;
@@ -28,7 +31,7 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    height : 60px;
+    height : 80px;
     background-color: #1e1e1b;
     position: fixed;
     z-index: 100;
@@ -58,11 +61,12 @@ body{
  .menuItem{
     box-sizing: border-box;
     list-style: none;
-    padding: 25px 15px 0 15px; 
+    padding: 35px 15px 0 15px; 
   }
   .menuItem a{
     transition: color 0.4s ease;
     color: white;
+    font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -236,18 +240,19 @@ body{
 .containerResevation{
   position: absolute;
   margin: 0 auto;
-  top: 33.33%;
-  right: 41%;
-  /* width: auto; */
+  top: 30%;
+  right: 480px;
+  left: 480px;
+  width: 200px;
 }
 .containerResevation img{
   display: flex;
   margin: 5px auto;
-  width: 20%;
-  height: 20%;
+  width: 50%;
+  height: 50%;
 }
 .containerResevation h3, .containerResevation h4{
-  margin: 5px auto;
+  margin: 10px auto;
   text-align: center;
   font-size: 2.4em;
   color: #c21626;
@@ -260,7 +265,7 @@ body{
   position: absolute;
   width: 180px;
   height: 40px;
-  left: 15%;
+  left: 0;
   padding: 5px;
   background-color: transparent;
   border: solid rgba(193, 22, 38, 1) 2px;
@@ -273,13 +278,13 @@ body{
   background-color:rgba(193, 22, 38, 1);
   border-color: #1e1e1b;
   transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s, transform 0.3s ease 0s ;
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
-.containerResevation:hover img ~ .containerResevation a:hover {
+/* .containerResevation:hover img ~ .containerResevation a:hover {
   transform: scale(1.2);
   transition: transform 1s;
-}
+} */
 .containerResevation a span{
   display: flex;
   justify-content: center;
@@ -293,6 +298,57 @@ body{
   color:#1e1e1b;
   transition:color 0.4s ease 0s;
 }
+
+
+/* .containerResevation img:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+} */
+
+/* .containerResevation a:hover ~  */
+.carniumC{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+    display: none;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 
 /* BackGround1 */
 

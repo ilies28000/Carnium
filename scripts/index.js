@@ -294,3 +294,23 @@ buttonHamburger.addEventListener('click',function(){
     }
   
   })
+
+  // survol //
+
+  let commandeButton = document.querySelector('#commandeLink')
+  let carniumCLogo = document.querySelector('.containerResevation img')
+
+  commandeButton.addEventListener(
+        'mouseover',
+        function () {
+            carniumCLogo.classList.add('carniumC')
+            console.log('fa1')
+        }
+    )
+ commandeButton.addEventListener(
+            'mouseout',
+            function () {
+            carniumCLogo.classList.remove('carniumC')
+        }
+    )
+

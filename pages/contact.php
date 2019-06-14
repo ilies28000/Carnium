@@ -79,7 +79,7 @@
     <!-- <textarea rows="4" cols="50" placeholder="Votre message" name="message"></textarea> -->
     <!-- <input type="submit" value="Send" name="send"/> -->
   <!-- </form> -->
-  <form action="index.php" method="post">
+  <form action="contact.php" method="post">
             <!-- <div>
                 <label for="name">Sujet :</label>
                 <input type="text" placeholder="Sujet de votre mail" name="subject"/> 
