@@ -13,7 +13,7 @@ class Carousel{
      * @param {Object} options.slidesVisible Nombre element visible dans une slide
      * @param {boolean} opyions.infinite Slide infini
      * @param {boolean} options.loop Boucler en fin de slide
-     * @param {Object} options.time Temps de slide en slide
+     * @param {Object} options.time Temps de slide en slide en 's'
      */
  
     constructor( element, options = {}) {
@@ -252,10 +252,14 @@ document.addEventListener('DOMContentLoaded', function() {
     slidesToScroll : 1 ,
     slidesVisible : 1 ,
     infinite : true
-})
+    })
+new Carousel(document.querySelector('#carousel2'), {
+    slidesToScroll : 1 ,
+    slidesVisible : 1 ,
+    infinite : true
 
+    })
 })
-
 
 // scrolll
 

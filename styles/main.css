@@ -14,7 +14,7 @@ body{
     padding:0;
     font-family: "Rosarina", "Arial", sans-serif; 
     font-size: 100%;
-    min-height : 100%;
+    /* min-height : 100%; */
     overflow-x: hidden;
     color: #FFF;
     background-color: #000
@@ -353,7 +353,7 @@ body{
   margin: 0 auto;
   width: 100%;
   height: 900px;
-  background: url("../images/image3.jpeg"); 
+  background: url("../images/image6.jpeg"); 
   background-size: 1440px 900px;
   background-attachment: fixed;
 }
@@ -461,8 +461,8 @@ width: 100%;
 .background2{
   margin: 0 auto;
   width: 100%;
-  height: 1400px;
-  background: url("../images/image7.jpg"); 
+  height: 200vh;
+  background: url("../images/image8.jpeg"); 
   background-size: 1440px 900px;
   background-attachment: fixed;
   position: relative;
@@ -574,6 +574,34 @@ hr{
   background-color: #FFF;
 }
 */
+
+
+.item1{
+    margin: 50px auto;
+    width:100%;
+    transform: translate3d(0, -1px, 0);
+    overflow: hidden;
+}
+
+
+.item__image1{
+  display: flex;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+  width: 80%;
+}
+
+.item__image1 h2{
+  text-align: center;
+  margin-left: 30px;
+  font-size: 2vw;
+}
+
+.item__image1 p{
+  margin-left: 30px; 
+  font-size: 2vw;
+}
+
 /* footer */
 
 a{
@@ -935,7 +963,6 @@ button:hover{
 }
 
 .item__image img{
-  width: 100%;
   width: 100%;
   height: 100%;
   display: block;
