@@ -253,13 +253,21 @@ document.addEventListener('DOMContentLoaded', function() {
     slidesVisible : 1 ,
     infinite : true
     })
-new Carousel(document.querySelector('#carousel2'), {
-    slidesToScroll : 1 ,
-    slidesVisible : 1 ,
-    infinite : true
 
-    })
-})
+    new Carousel(document.querySelector('#carousel2'), {
+        slidesToScroll : 1 ,
+        slidesVisible : 1 ,
+        infinite : true
+
+        })
+
+//     new Carousel(document.querySelector('#carousel3'), {
+//         slidesToScroll : 1 ,
+//         slidesVisible : 1 ,
+//         infinite : true
+
+//         })
+ })
 
 // scrolll
 

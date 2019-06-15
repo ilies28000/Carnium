@@ -38,9 +38,9 @@
 
       // a parametrer
       $email = 'iliesbenosman@gmail.com';//email d'envoi
-      $password = '';// mdp
+      $password = 'Isco2200';// mdp
       $smtp = 'smtp.gmail.com';//serveur d'envoi
-      $to_email = 'iliesbenosman@gmail.com';//adresse email à qui envoyer le mail.
+      $to_email = 'no-reply@restaurant.com';//adresse email à qui envoyer le mail.
 
 
       $to_id = $email;
@@ -50,6 +50,9 @@
       $user_name = $_POST['user_name'];
       $user_prenom = $_POST['user_prenom'];
       $user_number = $_POST['user_number'];
+      $num = $_POST['num'];
+      $date = $_POST['date'];
+
 
       $mail = new PHPMailer;
       $mail->isSMTP();
@@ -69,7 +72,7 @@
       echo '<p id="para">'.$error.'</p>';
       }
       else {
-      echo '<p id="para">Message sent!</p>';
+      echo '<p id="para">Message Bien Envoyé!</p>';
       }
   }
   else {
@@ -95,6 +98,14 @@
             <div>
                 <label for="mail">e-mail :</label>
                 <input type="text" id="mail" placeholder="Votre email" name="toid"/>
+            </div>
+            <div>
+                <label for="numero">Numero de téléphone :</label>
+                <input type="text" id="telephone" name="num" placeholder="votre numéro de téléphone">
+            </div>
+            <div>
+                <label for="date">Date de réservation :</label>
+                <input type="data" id="date" name="date">
             </div>
             <div>
                 <label for="number">Nombre de personnes :</label>
@@ -126,6 +137,8 @@
       </div>
    </div>
 </body>
+<script>
+</script>
 </html>
 <?php
 
