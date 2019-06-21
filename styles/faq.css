@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ebebeb;
+    font-family: 'MontserratRegular';
+}
+main{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    background-color: #000;
+}
+.cont_a{
+    margin: 40px;
+}
+.cont_a a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ebebeb
+}
+.cont_faq{
+    font-family: "Rosarina";
+    font-size: 50px;
+    display: flex;
+    justify-content: center
+}
+ul{
+    margin: 10px;
+    list-style: none;
+}
+
+ul li{
+    padding: 15px;
+
+}
+
+ul li div{
+    height: 0;
+    overflow: hidden;
+    background: #c01626;
+    padding: 0px 40px;
+    border-top: thin solid #ebebeb;
+    border-bottom: thin solid #ebebeb;
+    line-height: 22px;
+    transition: height 1s;
+    font-size: 18px;
+}
+h3::before{
+    content: '';
+    display: inline-block;
+    margin-right: 15px;
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    background-color: black;
+}
+
+h3::after{
+    content: '>';
+    position: absolute;
+    display: inline-block;
+    transform: rotate(270deg);
+    transition: linear all 0.5s;
+    right: 25px;
+}
+
+.click h3::after{
+    transform: rotate(90deg);
+}
+
+.click div {
+    height: 80px;
+}

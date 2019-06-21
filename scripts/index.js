@@ -254,12 +254,6 @@ document.addEventListener('DOMContentLoaded', function() {
     infinite : true
     })
 
-    new Carousel(document.querySelector('#carousel2'), {
-        slidesToScroll : 1 ,
-        slidesVisible : 1 ,
-        infinite : true
-
-        })
 
 //     new Carousel(document.querySelector('#carousel3'), {
 //         slidesToScroll : 1 ,
@@ -313,3 +307,28 @@ burger.addEventListener('click', () => {
         }
     )
 
+            // MAP
+
+			// On initialise la latitude et la longitude de Carnium (centre de la carte)
+			let lat = 48.8464712;
+			let lon = 2.4288957;
+			let macarte = null;
+			// Fonction d'initialisation de la carte
+			function initMap() {
+				// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+                macarte = L.map('map').setView([lat, lon], 11);
+                // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+                L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                    // Il est toujours bien de laisser le lien vers la source des données
+                    attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+                    minZoom: 17
+                }).addTo(macarte);
+                // Nous ajoutons un marqueur
+    			let marker = L.marker([48.8464712, 2.4288957]).addTo(macarte);
+   		 	// Nous ajoutons la popup. A noter que son contenu (ici la variable ville) peut être du HTML
+	  		marker.bindPopup("Carnium<br>3 Avenue de la République, 94300 Vincennes</br>");
+  			}
+			window.onload = function(){
+				// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+				initMap();
+			};

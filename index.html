@@ -10,9 +10,13 @@
         <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
         <link rel="stylesheet" href=https://kit-free.fontawesome.com/releases/latest/css/free.min.css> -->
         <link rel="icon png" type="image/png" href="images/carniumLogo.png">
-        <!-- <script src="https://kit.fontawesome.com/b8300cc200.js"></script> -->
-        <link rel="stylesheet" href="instafeed-project/css/bootstrap.min.css">
-        <link rel="stylesheet" href="instafeed-project/css/magnific.css">
+        <!-- <link rel="stylesheet" href="instafeed-project/css/bootstrap.min.css">-->
+        <!-- <link rel="stylesheet" href="instafeed-project/css/magnific.css">  -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+                crossorigin="">
+        </script>
         <link href="styles/main.css" rel="stylesheet">
     </head>
     <body>
@@ -36,33 +40,27 @@
                         <a href="#menu" title="Menu">MENU</a>
                     </li>
                     <li class="menuItem current">
-                        <a href="#notreHistoire"
-                        title="Notre histoire">NOTRE HISTOIRE</a>
-                    </li>
-                    <li class="menuItem">
-                        <a href="#team" title="La team">LA TEAM</a>
+                        <a href="#livraison" title="Commande">COMMANDE</a>
                     </li>
                     <li class="menuItem current">
-                        <a href="#NosPartenaires" title="Nos partenaires">NOS PARTENAIRES</a>
-                    </li>
-                    <li class="menuItem current">
-                        <a href="#Commande" title="Commande">COMMANDE</a>
+                            <a href="#notreConcept"
+                            title="Notre Concept">NOTRE CONCEPT</a>
                     </li>
                     <li class="menuItem">
                         <a href="pages/contact.php" title="Contact & Commande">CONTACT /GROUPE</a>
                     </li>
                     <li class="menuItem current">
-                        <a href="index.html" title="Fas">FAQ</a>
+                        <a href="pages/faq.html" title="Fas">FAQ</a>
                     </li>
                 </ul>
                 <div class="reseauxSoci">
                     <div class="imageLogoFacebook">
-                        <a href="" title="Compte Facebook">
+                        <a href="https://www.facebook.com/Carnium.grillbar/" title="Compte Facebook" target="_blank">
                         <img src="images/SVG/FB.svg" alt="LogoFacebook">
                         </a>
                     </div>
                     <div class="imageLogoInstagram">
-                        <a href="Compte Instagram">
+                        <a href="https://www.instagram.com/carnium.grillbar/" title="Compte Instagram" target="_blank">
                             <img src="images/SVG/instagram-logo.svg" alt="LogoInstagram">
                         </a>
                     </div>
@@ -92,21 +90,11 @@
                             <img src="images/image5.jpg" alt="hbiba">
                         </div>
                     </div>
-                    <!-- <div class="item">
-                        <div class="item__image">
-                            <img src="images/image6.jpeg" alt="hbiba">
-                        </div>
-                    </div> -->
                     <div class="item">
                         <div class="item__image">
                             <img src="images/image7.jpg" alt="hbiba">
                         </div>
                     </div>
-                    <!-- <div class="item">
-                        <div class="item__image">
-                            <img src="images/image8.jpeg" alt="hbiba">
-                        </div>
-                    </div> -->
                     <div class="item">
                         <div class="item__image">
                             <img src="images/image9.jpg" alt="hbiba">
@@ -116,20 +104,20 @@
                 <div class="containerResevation">
                     <img class="" src="images/SVG/carniumC.svg" alt="logo C de carnium">
                     <h3> CARNIUM </h3>
-                    <a href="#" id="commandeLink" title="Commande"> <span>COMMANDEZ</span></a>
+                    <a href="#"  title="Commande"> <span id="commandeLink">COMMANDEZ</span></a>
                 </div>
             </div>
             <div class="background">
                 <div class="container_first">
                     <div id="menu">
-                        <h2 class="h2NotreConcept">
+                        <h2 class="h2NotreFormule">
                             <hr>
-                            NOTRE CONCEPT
+                            NOTRE FORMULE
                             <hr>
                         </h2>
-                        <div class="concept_container1">
+                        <div class="formule_container1">
                             <div>
-                                <img class="image_plat" src="images/Steak.png" alt="plat PNG">
+                                <img class="image_plat" src="images/SVG/plat.svg" alt="plat PNG">
                             </div>
                             <div>
                                 <h3>
@@ -145,9 +133,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="concept_container2">
+                        <div class="formule_container2">
                              <div>
-                                <img class="image_plat" src="images/steak2.png" alt="plat PNG">
+                                <img class="image_plat" src="images/SVG/platBoisson.svg" alt="plat PNG">
                             </div>
                             <div>
                                 <h3>
@@ -156,6 +144,7 @@
                                 <p>
                                     accompagnement
                                 </p>
+                                <img src="/images/SVG/plus.svg"  class='imagePlus'alt="logo Plus">
                                 <p>
                                     boisson
                                 </p>
@@ -166,9 +155,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="concept_container3">
+                        <div class="formule_container3">
                             <div>
-                                <img class="image_plat" src="images/steak3.png" alt="plat PNG">
+                                <img class="image_plat" src="images/SVG/platBoissonDesert.svg" alt="plat PNG">
                             </div>
                             <div>
                                 <h3>
@@ -177,9 +166,13 @@
                                 <p>
                                     accompagnement
                                 </p>
+                                   <img src="/images/SVG/plus.svg" class="imagePlus" alt="logo Plus">
+
                                 <p>
                                     boisson
                                 </p>
+                                   <img src="/images/SVG/plus.svg" class='imagePlus' alt="logo Plus">
+
                                 <p>
                                     dessert
                                 </p>
@@ -191,175 +184,47 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="livraison">
-
+                    <div id="livraison">
+                        <h2 class="h2Livraison">
+                            <hr>
+                            livraison 
+                            <hr>
+                        </h2>
+                        <div class="livraisonImage">
+                            <img src="images/uber-eats-logo.png" alt="Logo de Uber Eats">
+                        </div>
+                        <div class="linkUber">
+                            <a href="#">ALLER SUR UBER EAT</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="background2">
                 <div class="container_second">
-                    <div id="notreHistoire">
-                        <h2 class="h2Histoire">
+                    <div id="notreConcept">
+                        <h2 class="h2Concept">
                             <hr>
-                            NOTRE HISTOIRE
+                            NOTRE CONCEPT
                             <hr>
                         </h2>
-                        <div class="pageLeftHistoire">
-                            <div class=imageHistoire>
-                                <img src="images\NOTRE HISTOIRE.PNG" alt="NOTRE HISTOIRE">
+                        <h4 class="h4Concept">
+                                CARNIUM, c’est quoi ?
+                        </h4>
+                        <div class="pageLeftConcept">
+                            <div class=imageConcept>
+                                <img src="images/SVG/recherche.svg" alt="NOTRE CONCEPT">
                             </div>
                             <p>
-                                adcursu et superatis et tardius et nimia muro <br> tardius semitas difficultatibus venissent confisi<br> gravissimos ad augente semitas adposita
+                                CARNIUM ce sont des planches carnivores « individuelles » ou « gourmandes à partager ». Des viandes de qualité, préparées avec amour dans nos marinades maison et grillées à la flamme avant d’être « slicées ».</p>
+                            <p>
+                                Notre variété de viandes est soigneusement sélectionnée et livrée quotidiennement par notre artisan-boucher afin de garantir sa fraicheur. Tous nos produits sont 100% frais et faits maison, dès sauces maison jusqu’aux frites fraiches de pommes de terre ou de patates douces, en passant par nos desserts du moment.</p>
+                            <p> 
+                                Grâce à notre cuisine ouverte sur la salle et visuellement sur la rue, CARNIUM est aussi une expérience client unique : Une subtile odeur de cuisson à la flamme, un show du passage de la viande « du cru au cuit » entretenu par notre grillardin et une sympathique ambiance de convivialité avec nos planches gourmandes à partager (disponibles le soir et le weekend). 
                             </p>
                             <p>
-                                adcursu et superatis et tardius et nimia muro <br> tardius semitas difficultatibus venissent confisi<br> gravissimos ad augente semitas adposita
-                            </p>
-                            <p>                            adcursu et superatis et tardius et nimia muro <br> tardius semitas difficultatibus venissent confisi<br> gravissimos ad augente semitas adposita
-                                adcursu et superatis et tardius et nimia muro <br> tardius semitas difficultatibus venissent confisi<br> gravissimos ad augente semitas adposita
-                            </p>
-                        </div>
-                        <div class=pageRightHistoire>
-                            <p>
-                                Quievere augente pro nimia et paulisper arbitrabantur <br> nullo et lucem superatis et enim nullo opperientes <br> nimia levitate adposita et nullo verticosi nocte flexuosas <br> opperientes venissent accolas difficultatibus tuetur <br>
-                                terrorem evadebant adcursu et superatis et tardius et <br> nimia muro tardius semitas difficultatibus venissent <br> confisi gravissimos ad augente semitas adposita lucem <br> nullo tardius adcursu venissent lucem
-                            </p>
-                            <p>
-                                Quievere augente pro nimia et paulisper arbitrabantur <br> nullo et lucem superatis et enim nullo opperientes <br> nimia levitate adposita et nullo verticosi nocte flexuosas <br> opperientes venissent accolas difficultatibus tuetur <br>
-                                terrorem evadebant adcursu et superatis et tardius et <br> nimia muro tardius semitas difficultatibus venissent <br> confisi gravissimos ad augente semitas adposita lucem <br> nullo tardius adcursu venissent lucem
-                            </p>
-                            <p>
-                                opperientes nimia levitate adposita et nullo verticosi <br> nocte flexuosas opperientes venissent accolas <br> difficultatibus tuetur terrorem evadebant adcursu et <br> superatis et tardius et nimia muro tardius semitas
-                            </p>
-                        </div>
-                    </div>
-                    <div id="team">
-                        <h2 class="h2Team">
-                            <hr>
-                            NOTRE TEAM
-                            <hr>
-                        </h2>
-                        <div class="container">
-                            <div id="carousel2">
-                                <div class="item1">
-                                    <div class="item__image1">
-                                        <img src="images/man.png" alt="hbiba">
-                                        <div>
-                                            <h3>
-                                            Yassine
-                                            </h3>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio atque amet, quis error rerum beatae nemo nam asperiores quibusdam consequuntur rem non eos iste reiciendis. Repellat quaerat molestiae in?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item1">
-                                    <div class="item__image1">
-                                        <img src="images/girl.png" alt="hbiba">
-                                        <div>
-                                            <h3>
-                                            Yassine
-                                            </h3>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio atque amet, quis error rerum beatae nemo nam asperiores quibusdam consequuntur rem non eos iste reiciendis. Repellat quaerat molestiae in?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item1">
-                                    <div class="item__image1">
-                                        <img src="images/girl1.png" alt="hbiba">
-                                        <div>
-                                            <h3>
-                                            Yassine
-                                            </h3>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio atque amet, quis error rerum beatae nemo nam asperiores quibusdam consequuntur rem non eos iste reiciendis. Repellat quaerat molestiae in?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item1">
-                                    <div class="item__image1">
-                                        <img src="images/boy.png" alt="hbiba">
-                                        <div>
-                                            <h3>
-                                            Yassine
-                                            </h3>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio atque amet, quis error rerum beatae nemo nam asperiores quibusdam consequuntur rem non eos iste reiciendis. Repellat quaerat molestiae in?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item1">
-                                    <div class="item__image1">
-                                        <img src="images/girl2.png" alt="hbiba">
-                                        <div>
-                                            <h3>
-                                            Yassine
-                                            </h3>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio atque amet, quis error rerum beatae nemo nam asperiores quibusdam consequuntur rem non eos iste reiciendis. Repellat quaerat molestiae in?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="NosPartenaires">
-                        <h2 class=h2Partenaires>
-                            <hr>
-                            NOS PARTENAIRES
-                            <hr>
-                        </h2>
-                        <div class=partenaires_column>
-                            <img class=Ligner src="images\PARTENAIRES.PNG" alt="Ligne">
-                            <h4 class=partenaires>
-                            partenaires
-                            </h4>
-                            </p>
-                            <p>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
-                            </p>
-                            <p>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
-                            </p>
-                        </div>
-                        <div class=partenaires_column>
-                            <img class=Ligner src="images\PARTENAIRES.PNG" alt="Ligne">
-                            <h4 class=partenaires>
-                            partenaires
-                            </h4>
-                            </p>
-                            <p>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
-                            </p>
-                            <p>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
-                            </p>
-                        </div>
-                        <div class=partenaires_column>
-                            <img class=Ligner src="images\PARTENAIRES.PNG" alt="Ligne">
-                            <h4 class=partenaires>
-                            partenaires
-                            </h4>
-                            </p>
-                            <p>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
-                            </p>
-                            <p>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
-                            </p>
-                        </div>
-                        <div class=partenaires_column>
-                            <img class=Ligner src="images\PARTENAIRES.PNG" alt="Ligne">
-                            <h4 class=partenaires>
-                            partenaires
-                            </h4>
-                            </p>
-                            <p class=text>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
-                            </p>
-                            <p class=text>
-                            adcursu et superatis et tardius et nimia muro tardius semitas
+                                    L’offre CARNIUM est hybride :</br>
+                                   <span> Midi : Restauration « fast good » avec des formules individuelles, commande au comptoir et service à table.</span></br>
+                                   <span> Soir : En plus de l’offre du midi, des formules à partager et commande et service à table.</span></br>
                             </p>
                         </div>
                     </div>
@@ -368,12 +233,39 @@
             <div id="gallery">
                  <h2 class=h2Gallery>
                     <hr>
-                    Gallerie Instagram
+                    Galerie
                     <hr>
                 </h2>
                 <div id="instafeed" class="gallery-disposition gallery-item"></div>
             </div> 
-        </div>  
+            <div id="localisation">
+                <h2 class=h2Glocalisation>
+                <hr>
+                LOCALISATION
+                <hr>
+                </h2>
+                <div>
+                    <div class="localisation_container">
+                        <div id="map">
+                                <!-- Ici s'affichera la carte -->
+                        </div> 
+                        <div class="localisation_container_p">
+                            <p>
+                                Pour plus d'information.
+                            </p>
+                            <p>
+                                Adresse : 3 Avenue de la République, 94300 Vincennes
+                            </p>
+                            <p>
+                                Mail : restautant@carnium.com
+                            </p>
+                            <p>
+                                Tél : 01 46 81 58 74
+                            </p>
+                        </div>
+                    </div>
+                </div>
+          </div>
         <footer>
             <div class="PageDown">
               <div class="info">
@@ -385,20 +277,18 @@
                 <ul>
                   <li><a href="index.html">ACCUEIL</a></li>
                   <li><a href="#menu">MENU</a></li>
-                  <li><a href="#">LE CONCEPT</a></li>
-                  <li><a href="#notreHistoire">NOTRE HISTOIRE</a></li>
-                  <li><a href="#team">LA TEAM</a></li>
+                  <li><a href="#livraison">COMMANDE</a></li>
+                  <li><a href="#notreConcept">NOTRE CONCEPT</a></li>
                   <li><a href="pages/contact.php">CONTACT/RÉSERVATION</a></li>
-                  <li><a href="#NosPartenaires">NOS PARTENAIRES</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  <li><a href="pages/faq.html">FAQ</a></li>
                 </ul>
               </div>
               <div class="lineV">
               </div>
               <div class="SocialNetwork">
                 <p>Suivez l'actualité de votre restaurant CARNIUM</p>
-                <a href="https://www.facebook.com/Carnium.grillbar/"><img src="images/SVG/facebook-logo.svg" alt="logo FaceBook"></a>
-                <a href="#"><img src="images/SVG/instagram.svg" alt="logo Instagram"></a>
+                <a href="https://www.facebook.com/Carnium.grillbar/" target="_blank"><img src="images/SVG/facebook-logo.svg" alt="logo FaceBook"></a>
+                <a href="https://www.instagram.com/carnium.grillbar/" target="_blank"><img src="images/SVG/instagram.svg" alt="logo Instagram"></a>
               </div>
               <div class="lineH">
             </div>

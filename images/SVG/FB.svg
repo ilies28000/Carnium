@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Fichier 1</title><g id="Calque_2" data-name="Calque 2"><g id="Capa_1" data-name="Capa 1"><path id="Facebook_alt_" data-name="Facebook (alt)" class="cls-1" d="M90,15C90,7.12,82.88,0,75,0H15C7.12,0,0,7.12,0,15V75c0,7.88,7.12,15,15,15H45V56H34V41H45V35.16C45,25.08,52.57,16,61.88,16H74V31H61.88C60.55,31,59,32.61,59,35v6H74V56H59V90H75c7.88,0,15-7.12,15-15Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<title>Fichier 1</title>
+<g>
+	<g id="Capa_1">
+		<path id="Facebook_alt_" class="st0" d="M90,15c0-7.9-7.1-15-15-15H15C7.1,0,0,7.1,0,15v60c0,7.9,7.1,15,15,15h30V56H34V41h11
+			v-5.8C45,25.1,52.6,16,61.9,16H74v15H61.9c-1.3,0-2.9,1.6-2.9,4v6h15v15H59v34h16c7.9,0,15-7.1,15-15V15z"/>
+	</g>
+</g>
+</svg>

@@ -66,7 +66,7 @@
       $mail->Password = $password;
       $mail->addAddress($to_email);
       $mail->Subject = $toid;
-      $mail->msgHTML($user_message.' <br> '.$user_prenom.' <br> '.$user_name.' <br> '.$user_number);
+      $mail->msgHTML("Nom : ".$user_message.' <br> '.$user_prenom.' <br> '.$user_name.' <br> '.$user_number);
       if (!$mail->send()) {
       $error = "Mailer Error: " . $mail->ErrorInfo;
       echo '<p id="para">'.$error.'</p>';
