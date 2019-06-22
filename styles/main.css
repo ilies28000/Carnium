@@ -105,48 +105,6 @@ a:hover{
   transition: visibility 1s ease, background-image 1s ease;
 }
 
-/* .imageLogoFacebook a:hover img{
-  visibility: hidden;
-  transition: visibility 1s ease, background-image 1s ease;
-}
-.imageLogoFacebook a img:hover{
-  background-image: url("../images/SVG/facebookRouge.svg");
-  background-size: 60px;
-  transition: visibility 1s ease, background-image 1s ease;
-}  */
-/* .imageLogoInstagram a img:hover{
-  background-image: url("../images/SVG/instagramRouge.svg");
-  transition: color 2s ease;
-} */
-
-
-/* Slider */
-
-/*
-.angleRight::before{
-display: inline-block;
-vertical-align: center;
-font-weight: 900;
-content: "\f105";
-font-family: FontAwesome;
-}
-.angleLeft::before{
-display: inline-block;
-vertical-align: center;
-font-weight: 900;
-content: "\f104";
-font-family: FontAwesome;
-}
-*/
-
-/* .container_aceuil{
-margin: 0 auto;
-width: 100%;
-min-width: 1024px;
-display: flex;
-flex-direction: column;
-} */
-
 .container_aceuil{
 margin: 0 auto;
 /* width: 100vw; */
@@ -279,10 +237,6 @@ opacity: 0;
   transform: scale(1.25);
 }
 
-/* .containerResevation:hover img ~ .containerResevation a:hover {
-transform: scale(1.2);
-transition: transform 1s;
-} */
 .containerResevation a span{
   cursor: pointer;
   display: flex;
@@ -303,32 +257,6 @@ transition: transform 1s;
 }
 
 
-/* .containerResevation img:hover {
-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-transform: translate3d(0, 0, 0);
-backface-visibility: hidden;
-perspective: 1000px;
-}
-
-@keyframes shake {
-10%, 90% {
-  transform: translate3d(-1px, 0, 0);
-}
-
-20%, 80% {
-  transform: translate3d(2px, 0, 0);
-}
-
-30%, 50%, 70% {
-  transform: translate3d(-4px, 0, 0);
-}
-
-40%, 60% {
-  transform: translate3d(4px, 0, 0);
-}
-} */
-
-/* .containerResevation a:hover ~  */
 .carniumC{
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -477,25 +405,6 @@ margin :20px auto;
 font-size: 26px;
 }
 
-/* .formule{
-position: absolute;
-top : 0;
-right : 0;
-margin: 0 auto;
-width: 1440px;
-height: 200px;
-background-color: #FFF;
-}
-
-.livraison{
-position: absolute;
-top : 200px;
-right : 0;
-margin: 0 auto;
-width: 1440px;
-height: 400px;
-background-color: #FFF;
-} */
 
 /* BackGround2 */
 
@@ -703,6 +612,30 @@ border-bottom-color: black;
 opacity:0.7;
 -moz-opacity:0.7;
 -webkit-opacity:0.7;
+}
+
+
+
+
+/* MAP */
+.localisation_container{
+  display: flex;
+}
+
+.localisation_container_p{
+  margin: 75px auto; 
+}
+
+.localisation_container_p p{
+  font-family: 'MontserratRegular';
+  font-size: 20px; 
+  margin: 40px 0;
+}
+
+#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+  margin: 40px 80px;
+  width: 50%;
+  height:400px;
 }
 
 /* PAGE CONTACT*/
@@ -1044,77 +977,3 @@ width: 100%;
 }
 
 }
-
-/*
-
-@media screen and (min-width:768px) and (max-width:1024px)
-{
-.container{
-  width: 768px;
-}
-}
-
-@media screen and (min-width:540px) and (max-width:768px)
-{
-.container{
-  width: 540px;
-}
-}
-
-@media screen and (max-width:540px)
-{
-.container{
-  width: 100%;
-}
-
-div[class^="block1"]{
-  width:calc(100% - 20px);
-}
-} */
-
-
-
-
-
-
-
-
-
-
-/* MAP */
-.localisation_container{
-  display: flex;
-}
-
-.localisation_container_p{
-  margin: 75px auto; 
-}
-
-.localisation_container_p p{
-  font-family: 'MontserratRegular';
-  font-size: 20px; 
-  margin: 40px 0;
-}
-
-#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-  margin: 40px 80px;
-  width: 50%;
-  height:400px;
-}
-
-
-
-
-/* 
-color: #ccc;
-background-image: radial-gradient( #b14b56, rgba(255, 141, 141, 0.42));
-border-radius: 7px;
-padding: 20px;
-transition: background-color 1s;
-}
-
-.linkUber a:hover{
-background-color : #c21626;
-transition: background-color 1s;
-
-} */
