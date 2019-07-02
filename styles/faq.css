@@ -20,12 +20,7 @@ main{
     text-decoration: none;
     color: #ebebeb
 }
-.cont_faq{
-    font-family: "Rosarina";
-    font-size: 50px;
-    display: flex;
-    justify-content: center
-}
+
 ul{
     margin: 10px;
     list-style: none;

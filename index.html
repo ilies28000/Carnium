@@ -5,14 +5,12 @@
         <meta charset="UTF-8">
         <title>CARNIUM</title>
         <meta name="Le Restaurant qui révolu le Grill & Barr" content="Restaurant CARNIUM"/>
-        <link rel="icon png" type="image/png" href="images/carniumLogo.png">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-        crossorigin="" />
-        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-                crossorigin="">
-        </script>
-        <link href="styles/main.css" rel="stylesheet">
         <meta name="google-site-verification" content="googlefa7fd7080c1cd13d.html" />
+        <link rel="icon png" type="image/png" href="images/carniumLogo.png">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="crossorigin="" />
+        <link href="styles/main.css" rel="stylesheet">
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin="">
+        </script>
     </head>
     <body>
         <header id="header">
@@ -99,12 +97,39 @@
                 <div class="containerResevation">
                     <img class="" src="images/SVG/carniumC.svg" alt="logo C de carnium">
                     <h3> CARNIUM </h3>
-                    <h4>GRILL AND BAR</h4>
+                    <h4>GRILL <span>&</span> BAR</h4>
                     <a href="#"  title="Commande"> <span id="commandeLink">COMMANDEZ</span></a>
                 </div>
             </div>
             <div class="background">
                 <div class="container_first">
+                    <div id="notreConcept">
+                        <h2 class="h2Concept">
+                            <hr>
+                            NOTRE CONCEPT
+                            <hr>
+                        </h2>
+                        <h4 class="h4Concept">
+                                CARNIUM, c’est quoi ?
+                        </h4>
+                        <div class="pageLeftConcept">
+                            <div class=imageConcept>
+                                <img src="images/SVG/recherche.svg" alt="NOTRE CONCEPT">
+                            </div>
+                            <p>
+                                CARNIUM ce sont des planches carnivores « individuelles » ou « gourmandes à partager ». Des viandes de qualité, préparées avec amour dans nos marinades maison et grillées à la flamme avant d’être « slicées ».</p>
+                            <p>
+                                Notre variété de viandes est soigneusement sélectionnée et livrée quotidiennement par notre artisan-boucher afin de garantir sa fraicheur. Tous nos produits sont 100% frais et faits maison, dès sauces maison jusqu’aux frites fraiches de pommes de terre ou de patates douces, en passant par nos desserts du moment.</p>
+                            <p> 
+                                Grâce à notre cuisine ouverte sur la salle et visuellement sur la rue, CARNIUM est aussi une expérience client unique : Une subtile odeur de cuisson à la flamme, un show du passage de la viande « du cru au cuit » entretenu par notre grillardin et une sympathique ambiance de convivialité avec nos planches gourmandes à partager (disponibles le soir et le weekend). 
+                            </p>
+                            <p>
+                                    L’offre CARNIUM est hybride :</br>
+                                    <span> Midi : Restauration « fast good » avec des formules individuelles, commande au comptoir et service à table.</span></br>
+                                    <span> Soir : En plus de l’offre du midi, des formules à partager et commande et service à table.</span></br>
+                            </p>
+                        </div>
+                    </div>
                     <div id="menu">
                         <h2 class="h2NotreFormule">
                             <hr>
@@ -180,6 +205,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="background2">
+                <div class="container_second">
                     <div id="livraison">
                         <h2 class="h2Livraison">
                             <hr>
@@ -191,37 +220,6 @@
                         </div>
                         <div class="linkUber">
                             <a href="#">ALLER SUR UBER EAT</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="background2">
-                <div class="container_second">
-                    <div id="notreConcept">
-                        <h2 class="h2Concept">
-                            <hr>
-                            NOTRE CONCEPT
-                            <hr>
-                        </h2>
-                        <h4 class="h4Concept">
-                                CARNIUM, c’est quoi ?
-                        </h4>
-                        <div class="pageLeftConcept">
-                            <div class=imageConcept>
-                                <img src="images/SVG/recherche.svg" alt="NOTRE CONCEPT">
-                            </div>
-                            <p>
-                                CARNIUM ce sont des planches carnivores « individuelles » ou « gourmandes à partager ». Des viandes de qualité, préparées avec amour dans nos marinades maison et grillées à la flamme avant d’être « slicées ».</p>
-                            <p>
-                                Notre variété de viandes est soigneusement sélectionnée et livrée quotidiennement par notre artisan-boucher afin de garantir sa fraicheur. Tous nos produits sont 100% frais et faits maison, dès sauces maison jusqu’aux frites fraiches de pommes de terre ou de patates douces, en passant par nos desserts du moment.</p>
-                            <p> 
-                                Grâce à notre cuisine ouverte sur la salle et visuellement sur la rue, CARNIUM est aussi une expérience client unique : Une subtile odeur de cuisson à la flamme, un show du passage de la viande « du cru au cuit » entretenu par notre grillardin et une sympathique ambiance de convivialité avec nos planches gourmandes à partager (disponibles le soir et le weekend). 
-                            </p>
-                            <p>
-                                    L’offre CARNIUM est hybride :</br>
-                                   <span> Midi : Restauration « fast good » avec des formules individuelles, commande au comptoir et service à table.</span></br>
-                                   <span> Soir : En plus de l’offre du midi, des formules à partager et commande et service à table.</span></br>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -247,13 +245,13 @@
                         </div> 
                         <div class="localisation_container_p">
                             <p>
-                                Pour plus d'information.
+                                3 Avenue de la République, 94300 Vincennes
                             </p>
                             <p>
-                                Adresse : 3 Avenue de la République, 94300 Vincennes
+                                Metro 1 Berault, RER A Vincennes.
                             </p>
                             <p>
-                                Mail : restautant@carnium.com
+                                Mail : carnium@restautant.com
                             </p>
                             <p>
                                 Tél : 01 46 81 58 74
@@ -262,11 +260,75 @@
                     </div>
                 </div>
           </div>
+            <h2 class="h2faq">
+                <hr>
+                FAQ
+                <hr>
+            </h2>
+          <main>
+            <ul>
+              <li>
+                <h3>Le concept est sympa, mais votre viande est uniquement servie sur planche ? 
+                </h3>
+                <div>
+                  <p>
+                        Nous proposons également un format « sandwich », avec supplément. Votre plat est servi dans un pain artisanal préparé par notre artisan-boulanger, une Ciabatta à l’huile d’olive et aux herbes de Provence. 
+                  </p>
+                </div>
+              </li>
+              <li>
+                <h3>Peut-on réserver une table ?</h3>
+                <div>
+                  <p>
+                        Oui, avec plaisir. Nous gérons les réservations pour les services du soir, tout simplement en nous appelant au 01.46.81.58.74.              </p>
+                </div>
+              </li>
+              <li>
+                <h3>Proposez-vous un service de livraison à domicile ?</h3>
+                <div>
+                  <p>
+                    Nous ne disposons pas encore de notre propre flotte en interne mais notre offre est disponible sur la plateforme Uber-Eat actuellement.              </p>
+                </div>
+              </li>
+              <li>
+                <h3>Est-il possible de commander à emporter ?
+                </h3>
+                <div>
+                  <p>
+                        Notre équipe aura le plaisir de prendre votre commande par téléphone. Un service de « Click & Collect » sera bientôt disponible sur notre site internet pour faciliter votre commander et fluidifier le passage en caisse.               </p>
+                </div>
+              </li>
+              <li>
+                <h3>Quelles boissons accompagnent vos viandes ?
+                    </h3>
+                <div>
+                  <p>
+                        Nous proposons du Soft (citronnade maison, jus, soda…), du café torréfié à paris, une belle sélection de vins qui se marient parfaitement avec chaque viande, des bières artisanales en pression et à la bouteille (Gallia brassée à Pantin), des cocktails maison…              </p>
+                </div>
+              </li>
+              <li>
+                <h3>Et si je suis végétarien(ne)  ?                </h3>
+                <div>
+                  <p>
+                        Dont worry, nous pensons également à vous. Nous proposons une option végétarienne : Des légumes du moment, mariné, des fois précuits au four et bien-sûr grillés à la flamme.              </p>
+                </div>
+              </li>
+              <li>
+                <h3>Et sinon, vous recrutez ?
+                    </h3>
+                <div>
+                  <p>
+                        Vous pouvez adresser votre CV à : recrutement@carnium.fr
+                    </p>
+                </div>
+              </li>
+            </ul>
+          </main>
         <footer>
             <div class="PageDown">
               <div class="info">
                 <p>Carnium</p>
-                <p>Mail : restautant@carnium.com</p>
+                <p>Mail : carnium@restautant.com</p>
                 <p>Tél : 01 46 81 58 74</p>
               </div>
               <div class="LinkPage">
