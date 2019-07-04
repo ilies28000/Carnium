@@ -45,8 +45,8 @@ nav{
 }
 
 .imageLogoCarnium{
-  width: 130px;
-  margin: 10px 0px;
+  width: 120px;
+  margin: 0px 20px;
 }
  .imageLogoCarnium a {
   width : 100%;
@@ -689,7 +689,7 @@ ul li div{
   transition: height 1s;
   font-size: 18px;
 }
-h3::before{
+li h3::before{
   content: '';
   display: inline-block;
   margin-right: 15px;
@@ -699,13 +699,14 @@ h3::before{
   background-color: black;
 }
 
-h3::after{
+li h3::after{
   content: url('../images/down-arrow.png');
   position: absolute;
   height: 10px;
   transform: rotate(180deg);
   transition: linear all 0.5s;
   right: 30px;
+  cursor: pointer;
 }
 
 .click h3::after{
