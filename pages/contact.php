@@ -8,22 +8,21 @@
   <title>Document</title>
 </head>
 <body>
+    <div class="cont_a">  
+      <a href="../index.html"> <- Revenir a l'acceuil</a>
+    </div>
    <div class='head_block'>
       <div class='head_black'>
       </div>
       <h2>Réservation de groupe</h2>
    </div>
-   <div class='head_welcome'>
-    <div class="line_horizon"></div>
-    <h3>Bienvenue</h3>
-    <div class="line_horizon"></div>
-   </div>
+   
    <div class="resa_contain">
     <div class='form_container'>
-        <div class="form_title">
-          <h4>Faire une demande de réservation de groupe</h4>
+      <div class="form_title">
+          <h4>Réservation de groupe</h4>
           <p><em>A partir de 8 personnes</em></p>
-        </div> 
+      </div> 
   <?php
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
@@ -37,10 +36,10 @@
       require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
       // a parametrer
-      $email = 'iliesbenosman@gmail.com';//email d'envoi
-      $password = 'Isco2200';// mdp
+      $email = 'reservation.carnium@gmail.com';//email d'envoi
+      $password = 'Carnium2019';// mdp
       $smtp = 'smtp.gmail.com';//serveur d'envoi
-      $to_email = 'no-reply@restaurant.com';//adresse email à qui envoyer le mail.
+      $to_email = 'iliesbenosman@gmail.com';//adresse email à qui envoyer le mail.
 
 
       $to_id = $email;
@@ -50,8 +49,8 @@
       $user_name = $_POST['user_name'];
       $user_prenom = $_POST['user_prenom'];
       $user_number = $_POST['user_number'];
-      $num = $_POST['num'];
-      $date = $_POST['date'];
+      $user_numero = $_POST['user_numero'];
+      $user_date = $_POST['user_date'];
 
 
       $mail = new PHPMailer;
@@ -66,13 +65,13 @@
       $mail->Password = $password;
       $mail->addAddress($to_email);
       $mail->Subject = $toid;
-      $mail->msgHTML("Nom : ".$user_message.' <br> '.$user_prenom.' <br> '.$user_name.' <br> '.$user_number);
+      $mail->msgHTML("Nom : ".$user_name. '<br>' ."Prenom : ".$user_prenom. '<br>'. "Date de reservation : ".$user_date. '<br>' ."Nombre de personne : ".$user_number. '<br>' ."Message : ".$user_message. '<br>' ."Adresse Email : ".$toid. '<br>' ."Tel : ".$user_numero. '<br>');
       if (!$mail->send()) {
       $error = "Mailer Error: " . $mail->ErrorInfo;
       echo '<p id="para">'.$error.'</p>';
       }
       else {
-      echo '<p id="para">Message Bien Envoyé!</p>';
+      echo '<p id="para">Message Bien Recue!</p>';
       }
   }
   else {
@@ -89,46 +88,52 @@
             </div> -->
             <div>
                 <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name"/>
+                <input type="text" id="name" placeholder="Votre nom" name="user_name"/>
             </div>
             <div>
                 <label for="name">Prénom :</label>
-                <input type="text" id="prenom" name="user_prenom">
+                <input type="text" id="prenom" placeholder='Votre prénom' name="user_prenom">
             </div>
             <div>
                 <label for="mail">e-mail :</label>
-                <input type="text" id="mail" placeholder="Votre email" name="toid"/>
+                <input type="email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
+                required id="mail" placeholder="Votre email" name="toid"/>
             </div>
             <div>
                 <label for="numero">Numero de téléphone :</label>
-                <input type="text" id="telephone" name="num" placeholder="votre numéro de téléphone">
+                <input type="number" id="telephone"  placeholder="Votre numéro de téléphone" name="user_numero">
             </div>
             <div>
                 <label for="date">Date de réservation :</label>
-                <input type="data" id="date" name="date">
+                <input type="date" id="date" name="user_date">
             </div>
             <div>
                 <label for="number">Nombre de personnes :</label>
-                <input type="number" id="nbr" name="user_number">
+                <input type="number" id="nbr" min='8' max="20" placeholder="A partir de 8 personnes"name="user_number">
             </div>
             <div>
                 <label for="msg">Informations supplémentaires :</label>
-                <textarea id="msg" placeholder="Votre message" name="user_message"></textarea>
+                <textarea id="msg" placeholder="Un message à nous transmettre" name="user_message"></textarea>
             </div>
             <div class="button">
-                <input type="submit" value="Send" name="send"/>
+                <input id="button" type="submit" value="Send" name="send"/>
             </div>
         </form>
 <?php } ?>
 </div>
       <div class="info_supp">
         <div class='resto_data'>
-          <h3>Le restaurant</h3>
-          <p> est Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe accusantium culpa quos consequatur ut ipsa perferendis ullam ipsam nobis! Aliquam corporis iste cupiditate, dolores laudantium</p>
+          <div class="form_title">
+          <h4>Réservation via Lafourchette</h4>
+          <p><em>A partir d'une personne</em></p>
+          <img src="../images/lafourchette.png" alt="logo Lafourchette">
+          <a href="https://www.lafourchette.com/restaurant/carnium/459713">Lafourchette.com</a>
+          <hr>
+        </div>
         </div>
         <div class='open_hour'>
           <h3>Nos horaires</h3>
-          <p>Lundi au Samedi : 
+          <p>Du Lundi au Samedi : 
             <p>12h00-14h30 </p>
             <p>18h00-22h00</p>
           </p>
