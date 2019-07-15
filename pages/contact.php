@@ -11,12 +11,13 @@
     <div class="cont_a">  
       <a href="../index.html"> <- Revenir a l'acceuil</a>
     </div>
-   <div class='head_block'>
+    <div class='head_block'>
       <div class='head_black'>
       </div>
       <h2>Réservation de groupe</h2>
+    </div>
+   <div>
    </div>
-   
    <div class="resa_contain">
     <div class='form_container'>
       <div class="form_title">
@@ -97,7 +98,7 @@
             <div>
                 <label for="mail">e-mail :</label>
                 <input type="email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
-                required id="mail" placeholder="Votre email" name="toid"/>
+                required id="mail" placeholder="Votre adresse e-mail" name="toid"/>
             </div>
             <div>
                 <label for="numero">Numero de téléphone :</label>
@@ -105,42 +106,39 @@
             </div>
             <div>
                 <label for="date">Date de réservation :</label>
-                <input type="date" id="date" name="user_date">
+                <input type="date" placeholder="jj/mm/aaaa" id="date" name="user_date">
             </div>
             <div>
                 <label for="number">Nombre de personnes :</label>
-                <input type="number" id="nbr" min='8' max="20" placeholder="A partir de 8 personnes"name="user_number">
+                <input type="number" id="nbr" min='8' max="26" placeholder="A partir de 8 personnes"name="user_number">
             </div>
             <div>
                 <label for="msg">Informations supplémentaires :</label>
                 <textarea id="msg" placeholder="Un message à nous transmettre" name="user_message"></textarea>
             </div>
             <div class="button">
-                <input id="button" type="submit" value="Send" name="send"/>
+                <input id="button" type="submit" value="Envoyer" name="send"/>
             </div>
         </form>
 <?php } ?>
-</div>
+    </div>
       <div class="info_supp">
         <div class='resto_data'>
+          <div class="Tel_block">
+            <h4>Réservation via téléphone</h4>
+            <p><em>A partir d'une personne</em></p>
+            <a href="tel:+330146815874">  Nous contacter au : 01 46 81 58 74 </a> 
+            <hr>
+          </div>
           <div class="form_title">
-          <h4>Réservation via Lafourchette</h4>
-          <p><em>A partir d'une personne</em></p>
-          <img src="../images/lafourchette.png" alt="logo Lafourchette">
-          <a href="https://www.lafourchette.com/restaurant/carnium/459713">Lafourchette.com</a>
-          <hr>
-        </div>
-        </div>
-        <div class='open_hour'>
-          <h3>Nos horaires</h3>
-          <p>Du Lundi au Samedi : 
-            <p>12h00-14h30 </p>
-            <p>18h00-22h00</p>
-          </p>
-          <p>Fermé le Dimanche</p>
+            <h4>Réservation via Lafourchette</h4>
+            <p><em>A partir d'une personne</em></p>
+            <img src="../images/lafourchette.png" alt="logo Lafourchette">
+            <a href="https://www.lafourchette.com/restaurant/carnium/459713">Lafourchette.com</a>
+          </div>
         </div>
       </div>
-   </div>
+  </div>
 </body>
 <script>
 </script>
